@@ -1,0 +1,192 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+section {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto; 
+}
+
+.image img {
+    width: 100%;
+    height: auto;  
+    border-radius: 8px;
+}
+
+
+h2 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background: #003366;
+  color: white;
+}
+
+/* Form */
+form {
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #002244;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+
+
+
+
+.video-section {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+.video-section h2 {
+    margin-bottom: 15px;
+    color: #003366;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+.audio-section {
+    margin: 20px auto;
+    text-align: center;
+}
+.audio-section h3 {
+    margin-bottom: 10px;
+    color: #003366;
+}
