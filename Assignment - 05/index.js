@@ -2,29 +2,32 @@
 function calculate() {
     let a = parseFloat(document.getElementById("num1").value);
     let b = parseFloat(document.getElementById("num2").value);
-    let out = "";
+    let out = ""
     out += `Sum = ${a + b}\n`;
     out += `Difference = ${Math.abs(a - b)}\n`;
     out += `Product = ${a * b}\n`;
     out += `Quotient = ${a / b}`;
-    document.getElementById("result1").innerText = out;
+    document.getElementById("res1").innerHTML = out;
 }
 
-/* ii. Array Operations */
-function arrayOperations() {
-    let arr = [23, 5, 89, 12, 44];
+/* ii. Array */
+function arrayOp() {
+    let arr = document.getElementById("arr1").value.split(" ").map(Number);
+    let out = ""
+
     let largest = Math.max(...arr);
     let smallest = Math.min(...arr);
-    let ascending = [...arr].sort((a, b) => a - b);
-    let descending = [...arr].sort((a, b) => b - a);
-
-    let out = `Original Array: ${arr}\n`;
-    out += `Largest: ${largest}\nSmallest: ${smallest}\n`;
-    out += `Ascending: ${ascending}\nDescending: ${descending}`;
-    document.getElementById("result2").innerText = out;
+    let ascending = [...arr].sort((a,b) => a - b);
+    let descending = [...arr].sort((a,b) => b - a);
+    out  = `Original Array: ${arr}\n`;
+    out += `Largest = ${largest}\n`;
+    out += `Smallest = ${smallest}\n`;
+    out += `Ascending = ${ascending}\n`;
+    out += `Descending = ${descending}`;
+    document.getElementById("res2").innerText = out;
 }
 
-/* iii. Form Validation */
+/* iii. field */
 function validateForm() {
     let name = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();
@@ -40,12 +43,12 @@ function validateForm() {
     } else {
         out = "Form submitted successfully!";
     }
-    document.getElementById("result3").innerText = out;
-    return false; // prevent form refresh
+    document.getElementById("res3").innerText = out;
+    return false;
 }
 
-/* iv. Student Object */
-function studentOperations() {
+/* iv. student */
+function student() {
     let student = {
         name: "Alice",
         age: 20,
@@ -53,12 +56,12 @@ function studentOperations() {
     };
     student.class = "CS101"; 
     student.grade = "A";    
-
     let out = `Name: ${student.name}\n`;
     out += `Age: ${student.age}\n`;
     out += `Grade: ${student.grade}\n`;
     out += `Class: ${student.class}`;
-    document.getElementById("result4").innerText = out;
+
+    document.getElementById("res4").innerText = out;
 }
 
 /* v. Array Functions */
@@ -70,5 +73,5 @@ function processArray() {
     let sum = doubled.reduce((acc, val) => acc + val, 0);
 
     let out = `Original: ${arr}\nEven: ${evenNumbers}\nDoubled: ${doubled}\nSum: ${sum}`;
-    document.getElementById("result5").innerText = out;
+    document.getElementById("res5").innerText = out;
 }
