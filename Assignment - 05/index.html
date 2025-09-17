@@ -12,42 +12,38 @@
             <input type="number" id="num1" placeholder="Enter first number">
             <input type="number" id="num2" placeholder="Enter second number">
             <button onclick="calculate()">Calculate</button>
-            <pre id="result1"></pre>
+            <pre id="res1"></pre>
         </section>
-
         <!-- ii --->
         <section>
             <h2>ii. Array Operations</h2>
-            <button onclick="arrayOperations()">Run Array Operations</button>
-            <pre id="result2"></pre>
+            <input type="text" id="arr1" placeholder="Enter 5 numbers with space">
+            <button onclick="arrayOp()">Calculate</button>
+            <pre id="res2"></pre>
         </section>
-
         <!-- iii --->
         <section>
-            <h2>iii. Form Validation</h2>
+            <h2>iii. Field</h2>
             <form onsubmit="return validateForm()">
-            <input type="text" id="name" placeholder="Name"><br>
-            <input type="email" id="email" placeholder="Email"><br>
-            <input type="number" id="age" placeholder="Age"><br>
-            <button type="submit">Submit</button>
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="email" id="email" placeholder="Email"><br>
+                <input type="number" id="age" placeholder="Age"><br>
+                <button type="submit">Submit</button>
             </form>
-            <pre id="result3"></pre>
+            <pre id="res3"></pre>
         </section>
-
         <!-- iv --->
         <section>
-            <h2>iv. Student Object</h2>
-            <button onclick="studentOperations()">Show Student Info</button>
-            <pre id="result4"></pre>
+            <h2>iv. Student</h2>
+            <button onclick="student()">Student Info</button>
+            <pre id="res4"></pre>
         </section>
-
         <!-- v --->
         <section>
             <h2>v. Array Functions (map, filter, reduce)</h2>
             <button onclick="processArray()">Process Array</button>
-            <pre id="result5"></pre>
+            <pre id="res5"></pre>
         </section>
-
         <script src="./index.js"></script>
     </body>
 </html>
