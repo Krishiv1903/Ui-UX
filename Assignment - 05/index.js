@@ -74,4 +74,8 @@ function processArray() {
 
     let out = `Original: ${arr}\nEven: ${evenNumbers}\nDoubled: ${doubled}\nSum: ${sum}`;
     document.getElementById("res5").innerText = out;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ac76323e00c7e2571a626fe721b05112bf5d08c5
