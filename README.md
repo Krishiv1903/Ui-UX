@@ -1,4 +1,4 @@
-# UI/UX Course Assignments – README
+# UI/UX Course Assignments
 
 Welcome to the **UI/UX Course Assignments Repository**! This repository contains all seven assignments completed as part of my UI/UX course. Each assignment focuses on a specific area of design, research, prototyping, or usability.
 
